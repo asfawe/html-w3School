@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just do it</title>
+    <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/w3lynx_200.png">
+</head>
+<body>
+
+    <h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+    <h1>My First JavaScript</h1>
+
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+    <script>
+    function myFunction() {
+    document.getElementById("demo").style.fontSize = "25px"; 
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.backgroundColor = "yellow";        
+        }
+    </script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+    <h1>My First JavaScript</h1>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+    <ul style="list-style-type:circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>  
+
+
+    <h2>An ordered HTML list</h2>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>  
+
+      <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+    <h2>An unordered HTML list</h2>
+
+    <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ul>  
+
+    <style>
+        table, th, td {
+            border-radius: 10px;
+            border: 1px dashed black;
+
+            border-collapse: collapse;
+            
+        }
+    </style>
+
+    <!-- <style>
+        body {
+            background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+    </style> -->
+
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <div style="background-image: url('http://tcpschool.com/examples/images/img_imagemap.jpg')">당신은 할수 있습니다.<br>해커가 될수 있습니다.<br>포기하지말고 끝까지 하세요.</div>
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="https://www.w3schools.com/w3images/mac.jpg" alt="hello">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="http://tcpschool.com/examples/images/img_imagemap.jpg" onclick="myFunction()">
+    <!-- <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"> -->
+    </map>
+
+    <script>
+        function myFunction() {
+        alert("You clicked the coffee cup!");
+        }
+        </script>
+
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+    <del>hello</del>
+    <ins>world</ins>
+    <sub>lee</sub>
+
+    <p>I am so <q>cool</q></p>
+
+    <p>The <abbr title="World Health Organization">a</abbr> was founded in 1948.</p>
+
+    <bdo dir="rtl">This line will be written from right to left</bdo>
+
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature.
+    The world's leading conservation organization,
+    WWF works in 100 countries and is supported by
+    1.2 million members in the United States and
+    close to 5 million globally.
+    </blockquote>
+
+
+    <table style="width:100%">
+        <caption>세상의 것들</caption>
+        <tr>
+            <th>동물</th>
+            <th>식물</th>
+            <th>곤충</th>
+        </tr>
+        <tr>
+            <td>호랑이</td>
+            <td>장미꽃</td>
+            <td>사마귀</td>
+        </tr>
+        <tr>
+            <td>강아지</td>
+            <td>해바라기</td>
+            <td>무당벌레</td>
+        </tr>
+    </table>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        table {
+          border-spacing: 20px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Cellspacing</h2>
+        <p>Change the space between the cells with the border-spacing property.</p>
+        
+        <table style="width:100%">
+          <tr>
+            <th colspan="2">Firstname</th>
+            <th rowspan="2">Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+
+    <table style="width:100%">
+        <tr style="width:100%">
+            <th>에밀</th>
+            <th>토비아스</th>
+            <th>리누스</th>
+        </tr>
+        <tr style="width:100%">
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+
+        <style>
+            tr:nth-child(even) {
+                background-color: #aaddee;
+            }
+            th:nth-child(even) {
+                background-color: #aaddee;
+            }
+            tr:hover {background-color: #ffe600;}
+        </style>
+
+        <h2>Zebra Striped Table</h2>
+        <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+        <table>
+        <colgroup>
+            <col span="3" style="background-color: #D6EEEE">
+        </colgroup>
+        <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+        </tr>
+        <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+        </tr>
+        <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+        </tr>
+        <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+        </tr>
+        <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+        </tr>
+        </table>
+    </table>
+
+    
+<h2>Colgroup</h2>
+<p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+
+<table style="width: 100%;">
+<colgroup>
+  <col span="3" style="background-color: #D6EEEE">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111111;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Navigation Menu</h2>
+    <p>In this <span>example</span>, we use CSS to style the list horizontally, to create a navigation menu:</p>
+    
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <iframe height="200" width="300" title="Iframe Example"></iframe>
+</body>
+</html>
